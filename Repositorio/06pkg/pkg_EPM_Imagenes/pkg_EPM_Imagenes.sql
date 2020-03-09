@@ -19,9 +19,9 @@ CREATE OR REPLACE PACKAGE BODY pkg_EPM_Imagenes IS
     
         if ( instr( isbInicioImagen,CHR(137)|| 'PNG' ) > 0 ) THEN
         
-            dbms_output.put_line(  'Es una imagen PNG test' );
-            
-            blEs_PNG := TRUE;
+            dbms_output.put_line(  'Es una imagen PNG datos' );
+
+            blEs_PNG := false;
             
         end if;
         
