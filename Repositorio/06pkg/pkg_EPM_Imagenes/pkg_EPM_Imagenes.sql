@@ -21,7 +21,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_EPM_Imagenes IS
         
             dbms_output.put_line(  'Es una imagen PNG' );
             
-            blEs_PNG := TRUE;
+            blEs_PNG := false;
             
         end if;
         
