@@ -553,7 +553,7 @@ AS
        SELECT cuponume, cupodocu, cupotipo, cupovalo
          FROM cupon
         WHERE cuponume = inuCupoNume
-          AND instr(','||csbEPM_TIPOCUPO_EXCLWEB||',',','||cupotipo+0||',') = 0
+          AND instr(','||csbEPM_TIPOCUPO_EXCLWEB||',',','||cupotipo||',') = 0
           AND cupovalo > 0
           AND instr(','||csbEPM_CUPOPROG_EXCLWEB||',',','||UPPER( NVL(cupoprog, '-') )||',') = 0;
           
