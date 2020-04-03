@@ -5758,7 +5758,7 @@ AS
             
         -- Se inicializa el objeto
         tbGeneral := tbGeneral_Empty;
-       
+		dbms_output.put_line('Prueba');
         ut_trace.trace('END pkg_Epm_WebCoupon.GetExcedentesEnergia ['||onuUnitsExp2||']['||onuValueExp2||']',2);
         
      EXCEPTION
